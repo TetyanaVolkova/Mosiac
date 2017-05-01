@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.activeNav {
+  color: #555 !important;
+  background-color: #e7e7e7 !important;
+}

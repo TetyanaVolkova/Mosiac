@@ -1,0 +1,21 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  padding: 0;
+}
+.header {
+  text-align: center;
+  margin: 20px 0;
+}
+.navContainer .navbar {
+  width: 100%;
+}
+.container-fluid {
+  margin-left: 15%;
+}

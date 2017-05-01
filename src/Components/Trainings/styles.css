@@ -1,0 +1,66 @@
+.course-container {
+  text-align: center;
+}
+.image-container {
+  margin: 4vh 0;
+}
+.form + hr {
+  width: 100%;
+  margin-top: 50px;
+}
+.control-label {
+  font-size: 12px;
+}
+.image-container img {
+  width: 42%;
+}
+#lessonContainer {
+  margin: 2vh 0;
+  border: 2px solid #34768c;
+}
+.lesson-title {
+  text-align: left;
+}
+.lesson-title h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#answer1, #answer2, #answer3 {
+  width: 16vw;
+  height: 8vh;
+  margin: 7vh 0 1vh;
+  line-height: 8vh;
+  border: 1px solid #888;
+  color: white;
+  font-size: 1.3vw;
+  background-color: #43b5ec;
+}
+.correctAnsContainer {
+  color: green;
+  font-size: 2vw;
+  margin: 5vh 0 ;
+  border: 2px solid #333;
+  padding: 2vw;
+}
+.answers-row {
+  margin: 2vh 0;
+}
+#drag1, #drag2, #drag3, #drag4 {
+  font-size: 20px;
+  padding: 0.3vw;
+  border: 2px solid red;
+  border-radius: 20px;
+  margin-left: 0.6vw;
+}
+.answers-row img {
+  width: auto;
+  height: 20vh;
+}
+.button-container .btn {
+  color: #00355f;
+  border-radius: 10px;
+  font-size: 1.3vw;
+}
+div.hide {
+  display: none;
+}
