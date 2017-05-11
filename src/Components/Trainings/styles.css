@@ -22,8 +22,9 @@
   text-align: left;
 }
 .lesson-title h4 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 #answer1, #answer2, #answer3 {
   width: 16vw;
