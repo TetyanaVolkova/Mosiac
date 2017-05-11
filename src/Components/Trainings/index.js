@@ -16,8 +16,8 @@ class Trainings extends Component {
       lessonTitle: "Course Start",
       mlScreen: "001",
       AnsclassName: "row col-sm-12",
-      correctAnswer: "hide row col-sm-12"
-
+      correctAnswer: "hide row col-sm-12",
+      hideResetButton: 1,
     }
     this.handleClick = this.handleClick.bind(this);
     this.backClick = this.backClick.bind(this);
@@ -37,7 +37,8 @@ class Trainings extends Component {
     this.setState({lesson: 1});
     this.setState({lessonTitle: "Course Start"});
     this.setState({mlScreen: "001"});
-    this.setState({AnsclassName: "row col-sm-12"})
+    this.setState({AnsclassName: "row col-sm-12"});
+    this.setState({hideResetButton: 1});
   }
   handleSubmit() {
     const answer1 = document.getElementById("spanContainer1").childNodes.length;
@@ -90,6 +91,7 @@ class Trainings extends Component {
     const result3 = ansArray3.containsArray(correctAns3);
 
     if(result1 && result2 && result3) {
+      this.setState({hideResetButton: 0});
       this.setState({AnsclassName: "hide row col-sm-12"});
       this.setState({correctAnswer: "correctAnsContainer row col-sm-12"})
 
@@ -187,10 +189,11 @@ class Trainings extends Component {
                 <button type="button" className="btn btn-default" onClick={this.backClick}>Back</button>
               </div>
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-default" onClick={this.handleReset}>Reset</button>
+              {this.state.hideResetButton ? <button type="button" className="btn btn-default" onClick={this.handleReset}>Reset</button> : null}
               </div>
               <div className="btn-group" role="group">
-                <button type="button" className="btn btn-default" onClick={this.handleSubmit}>Submit</button>
+                {this.state.hideResetButton ? <button type="button" className="btn btn-default" onClick={this.handleSubmit}>Submit</button> : null}
+                {!this.state.hideResetButton ? <button type="button" className="btn btn-default">Next</button> : null}
               </div>
             </div>
             </div>
